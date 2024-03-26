@@ -1,0 +1,94 @@
+/* Base settings for the body to apply a font and centering the content */
+body {
+    font-family: 'Arial', sans-serif; /* This is a guess, replace with your specific font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7; /* Off-white background, adjust to your exact color */
+  }
+  
+  /* Styling for the container of the processor */
+  .processor-container {
+    width: 80%; /* or specific px, adjust to match the design */
+    max-width: 600px; /* Max-width for larger screens */
+    background: #ffffff; /* Assuming a white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow, adjust to match the design */
+    margin: 20px;
+  }
+  
+  /* Titles and text styling */
+  h1, p {
+    color: #333; /* Dark grey text, adjust if needed */
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 24px; /* Adjust based on your design */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px; /* Adjust based on your design */
+  }
+  
+  /* Styling for the file input area */
+  .file-input-container {
+    border: 2px dashed #ccc; /* Dashed border, adjust color as needed */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #fafafa; /* Slightly off-white, adjust to match the design */
+  }
+  
+  .file-input-container:hover {
+    border-color: #aaa; /* Darker border on hover */
+  }
+  
+  /* The actual file input - hidden, but clickable */
+  input[type="file"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  /* Styling for buttons */
+  button {
+    background-color: #0056b3; /* Blue background, adjust to your color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #003b73; /* Darker blue on hover */
+  }
+  
+  /* Table styles, if you're using a table to display the contents */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc; /* Light grey border for cells */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0; /* Light grey background for headers */
+  }
+  
