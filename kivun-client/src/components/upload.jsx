@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
 import './upload.css'; // Make sure this CSS file exists and is styled
 
 function Upload() {
@@ -60,6 +62,8 @@ function Upload() {
                 </div>
             )}
             {uploading && <div>Uploading...</div>}
+            <Link to={'/'}>Back</Link>        
+
         </div>
     );
 }

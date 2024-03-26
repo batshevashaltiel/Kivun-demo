@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import './present.css'
 
 const Present = () => {
@@ -26,7 +28,7 @@ const Present = () => {
             <h1>CSV Files</h1>
             <ul>
                 {files.map(file => (
-                    <li key={file} onClick={() => handleFileSelection(file)} style={{cursor: 'pointer'}}>
+                    <li key={file} onClick={() => handleFileSelection(file)} style={{ cursor: 'pointer' }}>
                         {file}
                     </li>
                 ))}
@@ -54,7 +56,8 @@ const Present = () => {
                     </table>
                 </>
             )}
-        </div>
+            <Link to={'/'}>Back</Link>        
+            </div>
     );
 };
 
