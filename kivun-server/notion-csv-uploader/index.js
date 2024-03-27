@@ -11,7 +11,7 @@ const { addItem } = require('./notion');
 
 const app = express();
 const corsOptions = {
-    origin: 'http://localhost:3001', // Replace with your frontend's actual origin
+    origin: 'http://localhost:3000', // Replace with your frontend's actual origin
     credentials: true, // To allow cookies and authorization headers with CORS
   };
   
@@ -66,6 +66,7 @@ app.post('/upload-csv', uploadFile.single('file'), (req, res) => {
   if (!req.file) {
     return res.status(400).send('No file uploaded.');
   }
+  console.log(`req.file.filename= ${req.file.filename}`)
   res.send(`File saved locally as ${req.file.filename}`);
 });
 
